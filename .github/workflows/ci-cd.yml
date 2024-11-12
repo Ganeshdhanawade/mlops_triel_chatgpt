@@ -1,0 +1,48 @@
+name: MLOps CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Install DVC and Pull Data
+      run: |
+        pip install dvc
+        dvc pull  # Pull the data from DVC remote
+
+    - name: Build Docker image
+      run: docker build -t mlops-app .
+    
+    - name: Run tests
+      run: python -m unittest discover -s tests
+
+    - name: Push Docker image to Docker Hub
+      run: |
+        echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+        docker push mlops-app
+    
+    - name: Deploy to Render
+      run: |
+        # Set Render API key for authentication
+        echo "Setting Render API key"
+        curl -X POST https://api.render.com/deploy/svc-$RENDER_SERVICE_NAME \
+            -H "Authorization: Bearer $RENDER_API_KEY" \
+            -d '{"serviceId": "$RENDER_SERVICE_NAME"}'

@@ -1,0 +1,15 @@
+artifact_uri: file:///I:/Common/Ganesh/mlops_github/model/mlruns/0/784966d4392b4b7c9330c1e3df8df42d/artifacts
+end_time: 1731410244614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 784966d4392b4b7c9330c1e3df8df42d
+run_name: placid-pig-619
+run_uuid: 784966d4392b4b7c9330c1e3df8df42d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731410235334
+status: 3
+tags: []
+user_id: dhanagan

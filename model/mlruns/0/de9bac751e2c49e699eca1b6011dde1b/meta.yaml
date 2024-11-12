@@ -1,0 +1,15 @@
+artifact_uri: file:///I:/Common/Ganesh/mlops_github/model/mlruns/0/de9bac751e2c49e699eca1b6011dde1b/artifacts
+end_time: 1731410996768
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: de9bac751e2c49e699eca1b6011dde1b
+run_name: gregarious-goose-524
+run_uuid: de9bac751e2c49e699eca1b6011dde1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731410995683
+status: 3
+tags: []
+user_id: dhanagan

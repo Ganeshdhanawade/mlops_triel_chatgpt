@@ -1,0 +1,15 @@
+artifact_uri: file:///I:/Common/Ganesh/mlops_github/model/mlruns/0/60cd1438d7024dcbbaae79a5a7f48d6d/artifacts
+end_time: 1731411655375
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 60cd1438d7024dcbbaae79a5a7f48d6d
+run_name: indecisive-auk-348
+run_uuid: 60cd1438d7024dcbbaae79a5a7f48d6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731411650020
+status: 3
+tags: []
+user_id: dhanagan

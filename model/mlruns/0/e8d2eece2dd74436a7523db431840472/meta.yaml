@@ -1,0 +1,15 @@
+artifact_uri: file:///I:/Common/Ganesh/mlops_github/model/mlruns/0/e8d2eece2dd74436a7523db431840472/artifacts
+end_time: 1731410323312
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8d2eece2dd74436a7523db431840472
+run_name: adaptable-turtle-341
+run_uuid: e8d2eece2dd74436a7523db431840472
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731410321855
+status: 3
+tags: []
+user_id: dhanagan

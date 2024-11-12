@@ -1,0 +1,10 @@
+flask
+scikit-learn
+pandas
+numpy
+joblib
+requests
+mlflow
+hyperopt
+dvc
+evidently
